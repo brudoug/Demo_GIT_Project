@@ -27,9 +27,11 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.AutoEllipsis = True
+        Me.Button1.Location = New System.Drawing.Point(291, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(103, 30)
+        Me.Button1.Size = New System.Drawing.Size(168, 30)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Clic&kMe"
         Me.Button1.UseVisualStyleBackColor = True
@@ -38,7 +40,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(406, 286)
+        Me.ClientSize = New System.Drawing.Size(471, 307)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "GIT_Demo"
